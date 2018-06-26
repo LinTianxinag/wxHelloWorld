@@ -1,3 +1,18 @@
-<view>
-  <text> 活动页面 </text>
+<!--index.wxml-->
+<view class="container">
+  <!-- <canvas class='show_view' canvas-id='first_canvas'>
+  
+  
+  </canvas> -->
+<image class='container_image' src="../images/activity_1.jpg" mode="aspectFill">
+</image>
+<text >{{prize_result}}</text>
+
+  <button class='draw_button' bindtap='start_draw'> 开始抽奖 </button>
+    <view >  
+    <modal title="对话框" hidden="{{modalHidden}}" confirm-text="确定"  
+    cancel-text="取消" bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel">  
+      抽奖过程结束  
+    </modal>  
+  </view>  
 </view>
